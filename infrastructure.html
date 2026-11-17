@@ -137,28 +137,34 @@
           <div class="fp-floor">
             <p class="fp-name"><span>First floor</span></p>
             <div class="fp-zones">
-              <div class="z z-q" style="--w:1.1">QA</div>
-              <div class="z z-s" style="--w:1.6">FG store</div>
-              <div class="z z-s" style="--w:1.2">PM store</div>
-              <div class="z z-u" style="--w:1">Utility</div>
-              <div class="z z-m" style="--w:2.4">Reaction area</div>
+              <div class="z z-q" style="--w:1.1" data-step="7" tabindex="0">QA</div>
+              <div class="z z-s" style="--w:1.6" data-step="6" tabindex="0">FG store</div>
+              <div class="z z-s" style="--w:1.2" data-step="5" tabindex="0">PM store</div>
+              <div class="z z-u" style="--w:1.1" data-step="4" tabindex="0">
+                <span class="z-title">Utility</span>
+                <span class="z-sub">HVAC · RO · EDI</span>
+              </div>
+              <div class="z z-m" style="--w:2.4" data-step="3" tabindex="0">Reaction area</div>
             </div>
           </div>
           <div class="fp-floor">
             <p class="fp-name"><span>Ground floor</span></p>
             <div class="fp-zones">
-              <div class="z z-q" style="--w:1.1">QC</div>
-              <div class="z z-s" style="--w:1.6">FG store</div>
-              <div class="z z-m" style="--w:3">Manufacturing area</div>
-              <div class="z z-s" style="--w:1.6">RM store</div>
+              <div class="z z-q" style="--w:1.1" data-step="8" tabindex="0">QC</div>
+              <div class="z z-s" style="--w:1.6" data-step="9" tabindex="0">FG store</div>
+              <div class="z z-m" style="--w:3" data-step="2" tabindex="0">Manufacturing area</div>
+              <div class="z z-s" style="--w:1.6" data-step="1" tabindex="0">RM store</div>
             </div>
           </div>
-          <div class="fp-flow" aria-hidden="true"><span>Material flow</span></div>
+          <div class="fp-flow" aria-hidden="true">
+            <span class="fp-flow-label"><i class="flow-pulse-dot"></i> Material flow</span>
+            <div class="fp-flow-track"><span class="fp-flow-runner"></span></div>
+          </div>
           <ul class="fp-key">
             <li><i class="z-m"></i>Manufacturing</li>
             <li><i class="z-s"></i>Stores</li>
             <li><i class="z-q"></i>Quality</li>
-            <li><i class="z-u"></i>Utility</li>
+            <li><i class="z-u"></i>Utility (HVAC/RO)</li>
           </ul>
         </div>
       </div>
@@ -175,54 +181,54 @@
             material to dispatch. Nothing is packed until QC has approved the batch.</p>
         </div>
         <ol class="pflow" data-reveal="fade-up">
-          <li><span class="pf-no">01</span>
+          <li data-step="1"><span class="pf-no">01</span>
             <h3>Raw material</h3>
             <p>Tested raw material and process water enter the reaction.</p><span class="pf-side pf-in">+ Process
               water</span>
           </li>
-          <li><span class="pf-no">02</span>
+          <li data-step="2"><span class="pf-no">02</span>
             <h3>Reaction</h3>
             <p>Raw materials react to form the mineral salt in solution.</p>
           </li>
-          <li><span class="pf-no">03</span>
+          <li data-step="3"><span class="pf-no">03</span>
             <h3>Filtration</h3>
             <p>The reaction solution is filtered and the residue rejected.</p><span class="pf-side pf-out">Reject
               residue</span>
           </li>
-          <li><span class="pf-no">04</span>
+          <li data-step="4"><span class="pf-no">04</span>
             <h3>Evaporation</h3>
             <p>The clear solution is concentrated; water is removed.</p><span class="pf-side pf-out">Water
               rejects</span>
           </li>
-          <li><span class="pf-no">05</span>
+          <li data-step="5"><span class="pf-no">05</span>
             <h3>Crystallisation</h3>
             <p>The salt crystallises out of the concentrated solution.</p>
           </li>
-          <li><span class="pf-no">06</span>
+          <li data-step="6"><span class="pf-no">06</span>
             <h3>Centrifuge</h3>
             <p>Crystals are separated from the mother liquor.</p>
           </li>
-          <li><span class="pf-no">07</span>
+          <li data-step="7"><span class="pf-no">07</span>
             <h3>Drying</h3>
             <p>Wet cake is dried in a fluid bed dryer.</p>
           </li>
-          <li><span class="pf-no">08</span>
+          <li data-step="8"><span class="pf-no">08</span>
             <h3>Milling</h3>
             <p>Dried material is milled to size.</p>
           </li>
-          <li><span class="pf-no">09</span>
+          <li data-step="9"><span class="pf-no">09</span>
             <h3>Homogenisation</h3>
             <p>The batch is blended to a uniform lot.</p>
           </li>
-          <li><span class="pf-no">10</span>
+          <li data-step="10"><span class="pf-no">10</span>
             <h3>Sifting</h3>
             <p>Powder is sifted to the required mesh.</p>
           </li>
-          <li><span class="pf-no">11</span>
+          <li data-step="11"><span class="pf-no">11</span>
             <h3>Packing</h3>
             <p>Packed after QC approval of the batch.</p><span class="pf-side pf-in">QC approval</span>
           </li>
-          <li><span class="pf-no">12</span>
+          <li data-step="12"><span class="pf-no">12</span>
             <h3>Dispatch</h3>
             <p>Released stock leaves for customers in India and abroad.</p>
           </li>
